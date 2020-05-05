@@ -12,17 +12,17 @@ export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
   @Output() deleteTodo: EventEmitter<Todo> = new EventEmitter();
 
-  constructor(private todoService:TodoService) { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
   }
 
   // Set Dynamic Classes
   setClasses() {
-    let classes = {
+    const classes = {
       todo: true,
       'is-complete': this.todo.completed
-    }
+    };
 
     return classes;
   }
