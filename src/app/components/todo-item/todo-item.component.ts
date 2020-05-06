@@ -27,14 +27,14 @@ export class TodoItemComponent implements OnInit {
     return classes;
   }
 
-  onToggle(todo) {
+  onToggle(todo: Todo) {
     // Toggle in UI
     todo.completed = !todo.completed;
     // Toggle on server
     this.todoService.toggleCompleted(todo).subscribe(todo => console.log(todo));
   }
 
-  onDelete(todo) {
+  onDelete(todo: Todo) {
     this.deleteTodo.emit(todo);
   }
 
