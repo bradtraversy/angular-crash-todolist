@@ -1,7 +1,8 @@
 .del {
   background: #ff0000;
   color: #fff;
-  border: none;
+  font: bolder;
+  font-size: xx-small;
   padding: 5px 9px;
   border-radius: 50%;
   cursor: pointer;
